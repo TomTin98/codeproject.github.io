@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hetland Club</title>
+    <link rel="shortcut icon" href="ico/favicon.ico" sizes="256x256">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=divice-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+    <div id="dineappslogo" class="dineappslogo" class>
+        <img src="bilder/DineAppsheaderlogo.png" alt="dineappslogo";>
+        <br><br>
+    <br>
+    <div class="dttk1login">
+            <h3><b>Logg inn</b></h3>
+    <form name="login">
+            <h3><b>Brukernavn:</b></</h3><input type="text" name="userid"/>
+            <h3><b>Passord:</b></</h3><input type="password" name="pswrd"/>
+            <br><br>
+            <input type="button" onclick="check(this.form)" value="Logg inn"/>
+            <input type="reset" value="Avbryt"/>
+    </form>
+    </div>
+    </div>
+    <script language="javascript">
+            function check(form)
+            {
+        if(form.userid.value == "123" && form.pswrd.value == "123")
+        {
+            window.open('hjem.html')
+        }
+        else
+        {
+            alert("Error: feil brukernavn/passord")
+        }
+            }
+    </script>
+</body>
+</html>
